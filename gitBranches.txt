@@ -1,0 +1,19 @@
+Write a script to manage branches
+    - Must
+        - List branches
+        - Create branch
+        - Delete branch
+        - Merge 2 branches
+        - Rebase 2 branches
+e.g:
+```
+./gitBranches.sh  -l 
+
+output: 
+master 
+ninja
+
+./gitBranch.sh -b <branch_name>
+./gitBranch.sh -d <branch_name>
+./gitBranch.sh -m -1 <branch_name1> -2 <branch_name2> ----> which means branch_name1 branch is going to merge into branch_name2 branch 
+./gitBranch.sh -r -1 <branch_name1> -2 <branch_name2>---- which means branch_name1 branch is going to rebase on branch_name2 branch
